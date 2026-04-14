@@ -62,12 +62,20 @@ h2 {
 
 .track {
     display: flex;
-    gap: 40px;
-    animation: slide 20s linear infinite;
+    gap: 60px;
+    animation: slide 30s linear infinite;
 }
 
 .track img {
-    height: 30px;
+    height: 50px; /* aumentei */
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 @keyframes slide {
@@ -182,11 +190,17 @@ input {
     width: 100%;
     background: #25D366;
     border: none;
-    padding: 12px;
+    padding: 14px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
 }
+
+
 </style>
 </head>
 
