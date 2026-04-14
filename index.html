@@ -55,10 +55,6 @@ h2 {
 }
 
 /* PARCERIAS */
-.parcerias {
-    overflow: hidden;
-    opacity: 0.7;
-}
 
 .track {
     display: flex;
@@ -79,8 +75,8 @@ h2 {
 }
 
 @keyframes slide {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 /* VEÍCULO */
@@ -117,10 +113,11 @@ h2 {
 }
 
 .tabela {
-    background: #1a1a1a;
+    background: rgba(26, 26, 26, 0.8);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #333;
+    backdrop-filter: blur(10px);
 }
 
 .tabela table {
@@ -240,7 +237,16 @@ input {
             <img src="nubank.png">
             <img src="waze.png">
             <img src="maps.png">
-
+            <img src="uber.png">
+            <img src="99.png">
+            <img src="nubank.png">
+            <img src="waze.png">
+            <img src="maps.png">            
+            <img src="uber.png">
+            <img src="99.png">
+            <img src="nubank.png">
+            <img src="waze.png">
+            <img src="maps.png">
             <!-- loop -->
             <img src="uber.png">
             <img src="99.png">
@@ -301,7 +307,7 @@ input {
         </div>
 
         <div class="qrcode">
-            <img src="qrcode.png">
+            <img src="qrcodes.png">
         </div>
 
     </div>
