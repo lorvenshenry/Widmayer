@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Widmayer Etienne | Motorista</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background: 
+    linear-gradient(rgba(15,15,15,0.9), rgba(15,15,15,0.9)),
+    url('https://png.pngtree.com/thumb_back/fh260/background/20231027/pngtree-hexagonal-abstract-background-with-a-black-textured-surface-image_13704307.png');
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+/* BOTÕES */
+.btn {
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover { transform: scale(1.05); }
+
+.btn-whats { background: #25D366; color: white; }
+.btn-pix { background: #00b894; color: white; }
+.btn-veiculo { background: #f1c40f; color: black; }
+
+/* SOBRE */
+.sobre {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* PARCERIAS */
+.parcerias {
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.track {
+    display: flex;
+    gap: 40px;
+    animation: slide 20s linear infinite;
+}
+
+.track img {
+    height: 30px;
+}
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* VEÍCULO */
+.veiculo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transform: rotate(-2deg);
+    transition: 0.3s;
+}
+
+.galeria img:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.tabela {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.tabela table {
+    border-collapse: collapse;
+}
+
+.tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+/* PIX */
+.pix-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.qrcode img {
+    width: 220px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.copy-btn {
+    background: #00b894;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* TABELA FREQUÊNCIA */
+.freq-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.freq-table td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* BOTÃO */
+.btn-agendar {
+    width: 100%;
+    background: #25D366;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section>
+    <h1>Widmayer Etienne</h1>
+    <p>Motorista Uber e 99 | +15 anos de experiência</p>
+
+    <div>
+        <a href="#agendamento" class="btn btn-whats">WhatsApp</a>
+        <a href="#pix" class="btn btn-pix">PIX</a>
+        <a href="#veiculos" class="btn btn-veiculo">Veículos</a>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section>
+    <h2>Sobre</h2>
+    <div class="sobre">
+        <p>
+            Sou motorista profissional com mais de 15 anos de experiência, atuando com Uber e 99.
+            Tenho facilidade em dirigir à noite, prezando sempre pela segurança, conforto e pontualidade.
+        </p>
+    </div>
+</section>
+
+<!-- PARCERIAS -->
+<section>
+    <h2>Parcerias</h2>
+
+    <div class="parcerias">
+        <div class="track">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/99app_logo.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Nubank_logo_2021.svg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Waze_logo_2022.svg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Maps_icon_%282020%29.svg">
+
+            <!-- repetição pro loop -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/99app_logo.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Nubank_logo_2021.svg">
+        </div>
+    </div>
+</section>
+
+<!-- VEÍCULO -->
+<section id="veiculos">
+    <h2>Meu Veículo</h2>
+
+    <div class="veiculo">
+        <div class="galeria">
+            <img src="https://carango.com.br/f.php?w=320&h=237&src=https://carango.nyc3.digitaloceanspaces.com/images/veiculos/2024/08/renault-logan-2012-1-0-authentique-16v-flex-4p-manual-flex-125421-z5pyt1.jpg">
+            <img src="https://cdn.motor1.com/images/mgl/JLBJM/s1/4x3/renault-logan-2012-chega-com-opcao-de-cambio-automatico-e-motor-16-16v-hi-flex.webp">
+            <img src="https://cdn.motor1.com/images/mgl/X7b9E/s1/avaliacao-renault-logan-expression-16-16v-hi-flex-automatico-2012.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_4AniNs2l1bVoQLoixb6mFeXrD2Dd5UIEQ&s">
+        </div>
+
+        <div class="tabela">
+            <table>
+                <tr><td>Modelo</td><td>Renault Logan EXP 1.6</td></tr>
+                <tr><td>Ano</td><td>2012</td></tr>
+                <tr><td>Placa</td><td>AUN9490/SP</td></tr>
+                <tr><td>Experiência</td><td>+15 anos dirigindo</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- PIX -->
+<section id="pix">
+    <h2>Pagamento via PIX</h2>
+
+    <div class="pix-container">
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <td>Chave Pix</td>
+                    <td>
+                        Chave Aleatória
+                        <button class="copy-btn" onclick="copiarPix(this)">Copiar</button>
+                    </td>
+                </tr>
+                <tr><td>Nome</td><td>Widmayer Etienne</td></tr>
+                <tr><td>CPF</td><td>•••.498.892-••</td></tr>
+                <tr><td>Banco</td><td>260 - Nu Pagamentos S.A.</td></tr>
+                <tr><td>Identificador</td><td>vyEC1QEMGh</td></tr>
+            </table>
+
+            <br>
+
+            <a href="https://nubank.com.br/cobrar/1i0w1i/69dd7dc6-3abc-4a7a-a051-a204172213fb" target="_blank" class="btn btn-pix">
+                Ver QR Code
+            </a>
+        </div>
+
+        <!-- ⚠️ TROCAR LINK DO QR -->
+        <div class="qrcode">
+            <img src="https://via.placeholder.com/220x220?text=QR+CODE">
+        </div>
+
+    </div>
+</section>
+
+<!-- AGENDAMENTO -->
+<section id="agendamento">
+    <h2>Agendamento</h2>
+
+    <form onsubmit="enviarWhats(event)">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+        <input type="text" id="partida" placeholder="Local de partida" required>
+        <input type="text" id="destino" placeholder="Destino" required>
+        <input type="text" id="orcamento" placeholder="Orçamento (opcional)">
+
+        <table class="freq-table">
+            <tr>
+                <td><input type="radio" name="freq" value="Diário"> Diário</td>
+                <td><input type="radio" name="freq" value="Semanal"> Semanal</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="freq" value="Mensal"> Mensal</td>
+                <td><input type="radio" name="freq" value="Ocasional"> Ocasional</td>
+            </tr>
+        </table>
+
+        <button class="btn-agendar">Agendar via WhatsApp</button>
+    </form>
+</section>
+
+<script>
+function copiarPix(btn) {
+    navigator.clipboard.writeText("1806aa9d-8682-4f71-8091-31561a1b6bcd");
+
+    btn.innerText = "Copiado ✔";
+    btn.style.background = "#27ae60";
+
+    setTimeout(() => {
+        btn.innerText = "Copiar";
+        btn.style.background = "#00b894";
+    }, 2000);
+}
+
+function enviarWhats(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let idade = document.getElementById("idade").value;
+    let partida = document.getElementById("partida").value;
+    let destino = document.getElementById("destino").value;
+    let orcamento = document.getElementById("orcamento").value;
+
+    let freq = document.querySelector('input[name="freq"]:checked');
+    freq = freq ? freq.value : "Não informado";
+
+    let msg = `Olá, gostaria de agendar:\n\nNome: ${nome}\nIdade: ${idade}\nPartida: ${partida}\nDestino: ${destino}\nOrçamento: ${orcamento}\nFrequência: ${freq}`;
+
+    let url = `https://wa.me/554797608885?text=${encodeURIComponent(msg)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
